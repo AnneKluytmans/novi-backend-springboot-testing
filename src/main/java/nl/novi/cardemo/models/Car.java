@@ -24,7 +24,7 @@ public class Car {
     @NotNull(message = "Year cannot be null")
     @Min(value = 1886, message = "Year must be after 1886")
     @Max(value = 2024, message = "Year must be before or equal to 2024")
-    //@Column(name = "production_year");
+    @Column(name = "production_year")
     private int year;
 
     @OneToMany(mappedBy = "car", cascade = CascadeType.ALL) // Eén auto kan meerdere reparatienota's hebben
@@ -48,11 +48,11 @@ public class Car {
         this.model = model;
     }
 
-//    public Car(String brand, String model, int year) {
-//        this.brand = brand;
-//        this.model = model;
-//        this.year = year;
-//    }
+    public Car(String brand, String model, int year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
 
     public int getYear() {
         return year;
