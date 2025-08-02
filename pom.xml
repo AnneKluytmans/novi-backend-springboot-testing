@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>nl.novi</groupId>
-    <artifactId>Cardemo</artifactId>
+    <artifactId>Les18-cardemo-testing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Cardemo</name>
     <description>Cardemo</description>
@@ -99,12 +99,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
-            <version>6.4.1</version>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
 
     <build>

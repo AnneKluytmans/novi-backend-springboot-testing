@@ -40,6 +40,7 @@ class CarServiceTest {
     @Test
     void canGetCarsByBrandAndModel() {
         //arrange
+
         when(carRepository.findByBrandAndModel("Toyota", "Corolla")).thenReturn(mockCars.subList(0, 2));
         //act
         List<Car> result = carService.getCars("Toyota", "Corolla");
