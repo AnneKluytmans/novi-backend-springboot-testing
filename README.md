@@ -87,7 +87,7 @@ ___
 2. Locate the `CarApplication` main class.
 3. Click the green play️ button to run the application or use the terminal:
     ```bash
-    ./mvnw spring-boot:run
+    mvn spring-boot:run
    ```
 4. The server will start at: `http://localhost:8080`
 
